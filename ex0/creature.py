@@ -13,9 +13,3 @@ class Creature(ABC):
     def describe(self) -> str:
         return (f"{self._name} is a "
                 f"{self._type} type Creature")
-
-    def get_name(self) -> str:
-        return self._name
-
-    def get_type(self) -> str:
-        return self._type
