@@ -2,7 +2,7 @@ from abc import ABC, abstractmethod
 
 
 class TransformCapability(ABC):
-    transformed: bool = False
+    _transformed: bool = False
 
     @abstractmethod
     def transform(self) -> str:
