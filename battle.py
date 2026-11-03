@@ -2,7 +2,7 @@
 from ex0 import CreatureFactory, AquaFactory, FlameFactory
 
 
-def check_factory(factory: CreatureFactory) -> None:
+def run_factory(factory: CreatureFactory) -> None:
     base = factory.create_base()
     print(base.describe())
     print(base.attack())
@@ -27,10 +27,10 @@ if __name__ == "__main__":
     flame = FlameFactory()
     aqua = AquaFactory()
     print("Testing factory")
-    check_factory(flame)
+    run_factory(flame)
     print()
     print("Testing factory")
-    check_factory(aqua)
+    run_factory(aqua)
     print()
     print("Testing battle")
     battle(flame, aqua)
